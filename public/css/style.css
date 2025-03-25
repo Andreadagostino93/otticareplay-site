@@ -1,4 +1,4 @@
-/* Reset base e impostazioni globali */
+/* Reset e Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +6,15 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
     color: #333;
+    line-height: 1.7;
+    background-color: #f7f7f7;
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .container {
@@ -21,111 +23,113 @@ h1, h2, h3 {
     padding: 0 20px;
 }
 
-/* Header */
+/* Header Styles */
 header {
-    background-color: #222;
-    padding: 20px 0;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 15px 0;
 }
 
 .logo {
-    color: #fff;
-    font-size: 32px;
+    font-size: 30px;
+    color: #111;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    justify-content: flex-end;
+    list-style: none;
     gap: 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: 500;
+    color: #333;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #d4af37;
+    color: #a67c52;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('[link-cloudinary-immagine-hero]');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+    background-color: #e8e0d6;
+    padding: 80px 0;
     text-align: center;
-    color: #fff;
 }
 
 .hero h2 {
     font-size: 42px;
+    color: #111;
     margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
+    color: #555;
     margin-bottom: 25px;
 }
 
 .btn {
     display: inline-block;
-    background-color: #d4af37;
-    color: #222;
+    padding: 10px 25px;
+    background-color: #a67c52;
+    color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
+    border-radius: 25px;
     transition: background-color 0.3s;
 }
 
 .btn:hover {
-    background-color: #b9962c;
+    background-color: #8c6239;
 }
 
-/* Sezioni */
+/* Main Sections */
 section {
     padding: 60px 0;
 }
 
 section h2 {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 20px;
-    color: #222;
+    color: #111;
 }
 
 section p, section ul {
-    font-size: 18px;
+    font-size: 16px;
+    color: #555;
     margin-bottom: 20px;
 }
 
 section ul {
-    list-style: disc;
+    list-style-type: disc;
     padding-left: 20px;
 }
 
-/* Immagine Boutique */
+/* Boutique Image */
 #boutique img {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin-top: 20px;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    background-color: #222;
+    background-color: #111;
     color: #fff;
     padding: 40px 0;
     text-align: center;
 }
 
-footer h2 {
-    margin-bottom: 15px;
+footer .social-links a {
+    color: #a67c52;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-footer p {
-    margin-bottom: 10px;
+footer .social-links a:hover {
+    color: #fff;
 }
